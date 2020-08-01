@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="ccc.css" type="text/css" media="screen"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+</head>
+
+
+
+<body>
+
+  <!--
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">nom</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="nom">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">prenom</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="prenom">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputtel">téléphone</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="num tel">
+  </div>
+
+   <div class="form-group">
+    <label for="inputAddress">adresse</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">ville</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">pays</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+  </div> 
+
+
+    <div class="form-group col-md-4">
+      <label for="inputState">type</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    
+
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">sujet</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="sujet">
+    </div>
+
+
+
+   <div class="form-group">
+    <div class="form-group col-md-6">
+       <label for="exampleFormControlTextarea1">message</label>
+       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+     </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">envoyer</button>
+
+<div class="">
+</form>  
+
+-->
+<style type="text/css">
+#gr{
+  width: 800px;
+  height: 800px;
+
+}
+ .container-fluid {
+  padding-left: 0px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.formBox{
+  margin-top: 90px;
+  padding: 50px;
+}
+.formBox  h1{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.inputBox{
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.inputBox .inputText{
+  position: absolute;
+    font-size: 24px;
+    line-height: 50px;
+    transition: .5s;
+    opacity: .5;
+}
+.inputBox .input{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+    outline: none;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+
+}
+.focus .inputText{
+  transform: translateY(-30px);
+  font-size: 18px;
+  opacity: 1;
+  color: #00bcd4;
+
+}
+textarea{
+  height: 100px !important;
+}
+.button{
+  width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #03A9F4;
+    color: #fff;
+}
+
+
+
+
+/*footer*/
+
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+
+  h3, h4 {
+      margin: 10px 0 30px 0;     
+      font-size: 20px;
+      color: #111;
+  }
+
+
+
+
+
+
+
+
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+
+
+</style>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+      <a class="navbar-brand" href="#" ><img src="logo-tt.svg" id="tt"> 
+      </a>
+  <div class="navbar">
+
+
+
+    <ul class="nav navbar-nav" style="margin-left: 10%;" data-hover="dropdown">
+      <li class="linav" data-hover="dropdown" ><a href="#">MOBILE</a></li>
+      <li  class="linav"><a href="#">FIXE</a></li>
+      <li  class="linav"><a href="#">INTERNET</a></li>
+      <li  class="linav";"><a href="#">ASSISTANCE</a></li>
+      
+      <li  class="linav">
+          <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+       <a href="#">Link 3</a>
+        <a href="#">Link 3</a>
+         <a href="#">Link 3</a>
+    </div>
+    </li> 
+    
+    </ul>
+  </div> 
+</nav>
+
+<!--
+<div class="container-fluid">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>contacter nous</em></p>
+  <div class="row test">
+    <div class="col-md-7">
+    <img src="ground.jpg" id="gr" align="left">   
+      
+    </div>
+    
+    <div class="col-md-5">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="prenom" name="prenom" placeholder="prenom" type="text" required>
+        </div>
+      </div>
+     <div class="row">
+       <div class="col-md-6 form-group">
+        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+       </div>
+       <div class="col-md-6 form-group">
+        <input class="form-control" id="numero" name="numero" placeholder="numero téléphone" type="tel" required>
+       </div>
+     </div> 
+    
+  <div class="row">
+    <div class="col-md-6 form-group">
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="adresse" type="text" rows="3"></textarea>
+   </div>
+
+  </div>
+ <div class="row">
+    <div class="form-group col-md-6">
+     <input type="text" class="form-control" id="inputCity" placeholder="ville">
+    </div>
+
+    <div class="form-group col-md-3">
+      <select id="inputState" class="form-control">
+        <option selected>gouvernement</option>
+        <option>tunis</option>
+        <option>béja</option>
+        <option>jendouba</option>
+        <option>kef</option>
+        <option>bizert</option>
+        <option>sousse</option> 
+      </select>
+    </div>
+  </div> 
+ 
+    
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+ 
+    </div>
+  </div>
+
+
+</div>
+
+-->
+
+
+
+
+
+<div class="container-fluid">
+    <div class="container">
+      <div class="formBox">
+        <form>
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>Contact form</h1>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="inputBox ">
+                  <div class="inputText">First Name</div>
+                  <input type="text" name="" class="input">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="inputBox">
+                  <div class="inputText">Last Name</div>
+                  <input type="text" name="" class="input">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="inputBox">
+                  <div class="inputText">Email</div>
+                  <input type="text" name="" class="input">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="inputBox">
+                  <div class="inputText">Mobile</div>
+                  <input type="text" name="" class="input">
+                </div>
+              </div>
+            </div>
+
+        
+
+
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="inputBox">
+                  <div class="inputText">adresse</div>
+                  <textarea class="input"></textarea>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="inputBox">
+                  <div class="inputText">message</div>
+                  <textarea class="input" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="submit" name="" class="button" value="Send Message">
+              </div>
+              <div class="col-sm-6">
+                <input type="reset" name="" class="button" value="annuler Message">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+<script type="text/javascript">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   <script type="text/javascript">
+    $(".input").focus(function() {
+      $(this).parent().addClass("focus");
+    })
+   </script>
+</script>
+
+
+
+
+
+
+
+
+<!--footer-->
+
+
+<footer class="back">
+  <div class="cont" style="background-color:#404040">
+     <div class="pict1" >
+          
+             <h3 style="color:#ffffff" id="idh1"><span class="glyphicon glyphicon-earphone"> offres</span></h3>
+             
+          
+       <ul class="liste" style="background-color:#404040" style="list-style-type: none;">
+       <li><a href=""></a>&raquo; offres1</li>
+       <li><a href=""></a>&raquo; offres2</li>
+       <li><a href=""></a>&raquo; offres3</li>
+         </ul>
+        </div>
+
+        <div class="pict2" >
+
+          <h3 style="color:#ffffff"><span class="glyphicon glyphicon-fire"> Actualité</h3>
+      
+         <ul class="liste" style="background-color:#404040" style="list-style-type: none;">
+       <li><a href=""></a>&raquo; actualite</li>
+           </ul>
+        </div>  
+
+      <div class="pict3">
+   
+     <h3 style="color:#ffffff"><span class="glyphicon glyphicon-globe"> internet</h3>
+     
+    
+    
+     <ul class="liste" style="background-color:#404040" style="list-style-type: none;">
+      <li><a href=""></a>&raquo;3g</li>
+      <li><a href=""></a>&raquo;4g</li>
+      <li><a href=""></a>&raquo;5g</li>
+     </ul>
+       </div>
+       <div class="pict4">
+      
+      <h3 style="color:#ffffff"><span class="glyphicon glyphicon-tasks"> Nous rejoindre</h3>
+     
+     
+     <ul class="liste" style="background-color:#404040" style="list-style-type: none;">
+      <li><a href=""></a>&raquo; stages</li>
+      <li><a href=""></a>&raquo; dsq</li>
+      <li><a href=""></a>&raquo; sq</li>
+     </ul>
+       </div> 
+   
+       <div class="pict5">
+         <h3 style="color:#ffffff"><span class="glyphicon glyphicon-phone"> assisstance</h3>
+             
+     <ul class="liste" style="background-color:#404040" style="list-style-type: none;">
+      <li><a href=""></a>&raquo; reclamation</li>
+      <li><a href=""></a>&raquo; devis</li>
+     </ul>
+        </div>
+        
+
+        <div class="pict5">
+        
+          <h3 style="color:#ffffff"><span class="glyphicon glyphicon-refresh"> Univers telecom </h3>
+          
+      
+     <ul class="liste" style="background-color:#404040" style="list-style-type: none;">
+     
+     
+      <li><a href=""></a>&raquo; particulier</li>
+      <li><a href=""></a>&raquo; buisness</li>
+     </ul>
+    </div>
+</div> 
+
+
+
+
+      <span class="textSuivezNous" style="color: white; margin-left: 30%">Suivez-nous</span>
+      <br>
+      <div class="reseau_sociaux">
+            <a href="https://www.facebook.com/tunisietelecom" target="_blank">
+            <img alt="facebook" src="facebook logo.png" id="fb">
+            </a>
+          
+          <a href="https://twitter.com/_TunisieTelecom" target="_blank">
+            <img alt="twitter" src="twitter logo.png" id="tw">
+          </a>
+          <a href="https://www.youtube.com/user/groupett" target="_blank">
+            <img alt="youtube" src="youtube logo.png" id="you">
+          </a>
+         
+         </div>
+
+
+
+        <div class="copyright" style="color: white; margin-left: 30%">
+            © Copyright Shazam Entertainment Limited 2002-2018. Tous droits réservés. 
+        </div>
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+
+.loginbackground{    
+    background-image: url(admin-back.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.loginbox{  
+    background: white;
+    color: black;    
+     margin-top: 15%;
+    left: 0;
+    padding: 20px;   
+    box-shadow: 0 8px 50px -2px #000;
+    border-radius:5px;
+}
+
+img{
+      width: 40%;
+      height: 40%;
+}
+
+
+.login-button{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  margin: auto;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  background: rgba(3,3,3,.8);
+  overflow: hidden;
+  opacity: 0.4;
+  box-shadow: 10px 10px 30px #000;
+}
+
+
+}
+.logo{
+    width: 130px; 
+    height: 55px;
+    margin-left: 10%;
+}
+@media (max-width:767px) {
+    .loginbox{ 
+        margin-top: 10%;
+    }    
+}
+
+.loginbox_content{
+    padding:5% 11% 5% 11%;
+
+}
+
+.singtext{
+    font-family: "Open Sans",sans-serif;
+    font-size: 27px;  
+    color: #82C226;
+    float: right;
+    padding-right: 25%;
+}
+
+.submit-btn{
+    float: right;
+    margin-right: 28%;
+}
+
+.forgotpassword{
+    padding-left: 10%;
+}
+@media (max-width:800px) {
+    .submit-btn{
+        
+        margin-right: 23%;
+    }
+
+   
+}

@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+
+<div id="theme">
+	<ul class="localisation" id="loc">
+		<li id="1"><span class = "fleche_avant">&#9654;</span>1 - Carrefour</li>
+		<li id="2"><span class = "fleche_avant">&#9654;</span>2 - Mairie</li>
+	</ul>
+</div>
+
+</body>
+
+
